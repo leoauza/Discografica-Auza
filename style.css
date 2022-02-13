@@ -113,6 +113,12 @@ th, td {
 .art img {
     width: 200px;
     border-radius: 100%;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.art img:hover {
+    transform: scale(1.07);
 }
 
 .artist-content {
