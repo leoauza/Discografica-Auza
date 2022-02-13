@@ -1,0 +1,207 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-image: url(images/desktop_bg.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+@font-face {
+    font-family: 'Dolce Vita Bold';
+    src: url(fonts/Dolce\ Vita\ Heavy\ Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Dolce Vita';
+    src: url(fonts/Dolce\ Vita.ttf);
+}
+
+header img{
+    margin-left: 15px;
+    margin-top: 2px;
+}
+
+.logo {
+    font-family: 'Dolce Vita Bold', cursive;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to bottom, rgb(0, 204, 255), rgb(247, 0, 255));
+    font-family: 'Dolce Vita Bold';
+    justify-content: space-around;
+    list-style: none;
+    text-decoration: none;
+    flex-basis: 100%;
+}
+
+.video {
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.YouTube {
+    width: 560px;
+    height: 315px;
+}
+
+.titulos, .artist-content .art p, .redes .desarrollo {
+    font-family: 'Dolce Vita Bold';
+    color: #fc1297;
+    text-shadow: #5973f7 1.25px 1.25px;
+}
+
+.lanzamiento {
+    margin-left: 15px;
+    margin-right: 15px;
+    font-family: 'Dolce Vita';
+    color:#b30e6b;
+    text-shadow: #5973f7 0.5px 0.5px;
+}
+
+.redes {
+    display:grid;
+    justify-content: center;
+    grid-template-rows: 100%;
+    grid-template-columns: 1000px 40px 40px 40px 40px;
+}
+
+.redes .desarrollo{
+    text-align: center;
+}
+
+.video .lanzamiento img{
+    float: right;
+    margin-left: 10px;
+}
+
+.lanzamiento .text-lanzamiento {
+    text-align: justify;
+}
+
+.redes img {
+    width: 30px;
+}
+
+.contact-content .tarjeta {
+    font-family: 'Dolce Vita';
+    color:#b30e6b;
+    text-shadow: #5973f7 0.5px 0.5px;
+    text-align: right;
+}
+
+.contact-content {
+    padding: 15px;
+    margin-left: 400px;
+    display: flex;
+    justify-content:stretch;
+}
+
+table {
+    padding: 15px;
+}
+
+th, td {
+    border:1px solid black;
+  }
+
+.art img {
+    width: 200px;
+    border-radius: 100%;
+}
+
+.artist-content {
+padding:15px;
+}
+
+.nove {
+    padding:15px;
+}
+
+.logotipo img {
+    width: 90px;
+}
+
+.artist-content{
+    display: grid;
+    grid-template-rows: repeat(2, 250px);
+    grid-template-columns: repeat(3, 250px);
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.artist-content .art p{
+    text-align: center;
+}
+
+.lanzamiento img{
+    width: 160px;
+}
+
+@media screen and (max-width:480px){
+    body {
+        background: yellowgreen;
+    }
+    
+    .logotipo img{
+        margin-left: 40.6%;
+        justify-content: center;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        flex-basis: 70%;
+        margin-top: 10px;
+    }
+
+    .video {
+        display: flex;
+        padding: 15px;
+        flex-wrap: wrap;
+    }
+
+    .YouTube {
+        width: 423px;
+        height: 237px;
+    }
+
+    .lanzamiento {
+        margin-top: 25px;
+    }
+
+    .redes {
+        display:grid;
+        justify-content: center;
+        grid-template-rows: 50%;
+        grid-template-columns: 270px 40px 40px 40px 40px;
+        margin-top: 20px;
+    }
+
+    .artist-content{
+        display: grid;
+        grid-template-columns: repeat(2, 250px);
+    }
+
+    .contact-content {
+        display: flex;
+        justify-content: center;
+        margin-left: 0px;
+        padding: 15px;
+        flex-wrap: wrap;
+    }
+
+    .contact-content .tarjeta {
+        text-align: center;
+    }
+
+    .contact-content iframe {
+        margin-top: 10px;
+    }
+}
